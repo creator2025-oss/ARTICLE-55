@@ -1,0 +1,59 @@
+# Enhanced EU AI Act Article 55 Validation System Requirements
+# Tested with Python 3.9, 3.10, 3.11, 3.12, 3.13
+
+# Core PyRIT Framework (Required)
+pyrit>=0.4.0
+
+# Groq API Integration (Required)
+groq>=0.4.0
+
+# Additional API Support
+openai>=1.0.0
+
+# Data Processing (Required)
+pyyaml>=6.0
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Async Support (Required)
+aiofiles>=0.8.0
+
+# Logging and Utilities (Required)
+python-dateutil>=2.8.0
+
+# Optional: Enhanced Analysis & Visualization
+matplotlib>=3.5.0      # For plotting compliance trends
+seaborn>=0.11.0        # For advanced visualizations
+
+# Optional: Testing Framework
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+
+# Optional: Documentation Generation
+sphinx>=4.0.0
+sphinx-rtd-theme>=1.0.0
+
+# Development & Security (Optional)
+python-dotenv>=0.19.0  # For .env file support
+cryptography>=3.4.8    # For secure API key handling
+
+# Performance Optimization (Optional)
+uvloop>=0.17.0         # Faster event loop (Unix only)
+
+# System Information:
+# - Tested with Python 3.9+
+# - Compatible with Windows 11, Ubuntu 20.04+, macOS 12+
+# - PyRIT version 0.9.0+
+# - Groq API v0.4.0+
+
+# Installation Notes:
+# 1. Create virtual environment: python -m venv article55_env
+# 2. Activate environment: source article55_env/bin/activate (Unix) or .\article55_env\Scripts\Activate.ps1 (Windows)
+# 3. Install requirements: pip install -r requirements.txt
+# 4. Set API key: export GROQ_API_KEY="your_key" (Unix) or $env:GROQ_API_KEY="your_key" (Windows)
+
+# Minimal Installation (Core Only):
+# pip install pyrit groq pyyaml
+
+# Quick Verification:
+# python -c "import pyrit, groq, yaml; print('✅ Core dependencies ready!')"
